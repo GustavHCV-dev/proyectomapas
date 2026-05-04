@@ -1,0 +1,142 @@
+.comunidad-container {
+    background: #121212;
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 3rem;
+    color: #e0e0e0;
+  }
+  
+  .page-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 0 auto 1.5rem;
+    max-width: 680px;
+    padding: 0 1rem;
+  }
+  
+  /* ── FEED ── */
+  .feed {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* ── POST CARD ── */
+  .post-card {
+    background: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  
+  .post-card:hover {
+    border-color: #1565c0;
+  }
+  
+  /* ── HEADER ── */
+  .post-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 1.2rem 0.5rem;
+  }
+  
+  .post-avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1565c0;
+    /* ✅ Imagen de respaldo si no hay avatar */
+    background: #2a2a2a;
+  }
+  
+  .post-user {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+  }
+  
+  .post-sub {
+    font-size: 0.78rem;
+    color: #888;
+  }
+  
+  .post-sub small {
+    background: #2a2a2a;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    margin-left: 0.3rem;
+    color: #aaa;
+  }
+  
+  .post-time {
+    font-size: 0.75rem;
+    color: #666;
+    white-space: nowrap;
+  }
+  
+  /* ── CONTENIDO ── */
+  .post-stars {
+    padding: 0.2rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .post-text {
+    padding: 0.3rem 1.2rem 0.8rem;
+    font-size: 0.88rem;
+    color: #bdbdbd;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .post-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* ── ACCIONES ── */
+  .post-actions {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    border-top: 1px solid #2a2a2a;
+  }
+  
+  .action-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .action-btn:hover {
+    background: #2a2a2a;
+    color: #64b5f6;
+  }
+  
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .page-title { font-size: 1.4rem; }
+    .post-img { max-height: 250px; }
+  }

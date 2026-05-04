@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Navbar } from "../navbar/navbar";
 
 @Component({
   selector: 'app-comunidad',
-  imports: [],
+  imports: [Navbar],
   templateUrl: './comunidad.html',
   styleUrl: './comunidad.css',
 })
