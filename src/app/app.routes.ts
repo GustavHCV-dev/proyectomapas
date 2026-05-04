@@ -4,6 +4,7 @@ import { Emblemas } from './emblemas/emblemas';
 import { Fotos } from './fotos/fotos';
 import { Mapas } from './mapas/mapas';
 import { Navbar } from './navbar/navbar';
+import { Perfil } from './perfil/perfil';
 
 
 export const routes: Routes = [
@@ -13,6 +14,7 @@ export const routes: Routes = [
     { path:'mapas', component: Mapas },
     { path:'fotos', component: Fotos },
     { path:'navbar', component: Navbar },
+    { path:'perfil', component: Perfil },
     { path:'**', redirectTo: '' } 
 ];
 
