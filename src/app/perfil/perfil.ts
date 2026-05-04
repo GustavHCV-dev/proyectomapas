@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { Navbar } from "../navbar/navbar";
+import { RouterLink } from '@angular/router';
+import { Navbar } from '../navbar/navbar';
 
 @Component({
   selector: 'app-perfil',
-  imports: [Navbar],
+  standalone: true,
+  imports: [Navbar, RouterLink],
   templateUrl: './perfil.html',
-  styleUrl: './perfil.css',
+  styleUrl: './perfil.css'
 })
 export class Perfil {}
