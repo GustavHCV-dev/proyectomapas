@@ -6,6 +6,7 @@ import { Mapas } from './mapas/mapas';
 import { Navbar } from './navbar/navbar';
 import { Perfil } from './perfil/perfil';
 import { Footer } from './footer/footer';
+import { Comunidad } from './comunidad/comunidad';
 
 
 
@@ -18,6 +19,7 @@ export const routes: Routes = [
     { path:'navbar', component: Navbar },
     { path:'perfil', component: Perfil },
     { path:'footer', component: Footer },
+    { path:'comunidad', component: Comunidad },
     { path:'**', redirectTo: '' } 
 ];
 
