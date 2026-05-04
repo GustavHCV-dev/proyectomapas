@@ -3,7 +3,7 @@ import { Navbar } from "../navbar/navbar";
 
 @Component({
   selector: 'app-perfil',
-  imports: [Navbar],
+  imports: [],
   templateUrl: './perfil.html',
   styleUrl: './perfil.css',
 })
