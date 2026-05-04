@@ -1,0 +1,61 @@
+    <main class="home-container">
+
+  
+    <section class="hero">
+      <div class="hero-bg">
+     
+        <img src="assets/Fondo.png" alt="" class="hero-image" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">Explora el Mundo</h1>
+        <p class="hero-subtitle">Descubre mapas, fotos y emblemas de lugares increíbles</p>
+        <a routerLink="/mapas" class="hero-btn">Ver Mapas</a>
+      </div>
+    </section>
+  
+
+    <section class="map-section">
+      <div class="section-header">
+        <h2>Mapa Interactivo</h2>
+        <p>Explora ubicaciones en tiempo real</p>
+      </div>
+      <div class="map-wrapper">
+       
+        <iframe
+          class="google-map"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBO7Ro9wpBEer8v6_nzoBxJo53I4XytBkc&center=4.7110,-74.0721&zoom=12">
+        </iframe>
+      </div>
+    </section>
+  
+   
+    <section class="quick-access">
+      <div class="section-header">
+        <h2>Explorar</h2>
+      </div>
+      <div class="cards-grid">
+        <a routerLink="/mapas" class="card">
+          <div class="card-icon">🗺️</div>
+          <h3>Mapas</h3>
+          <p>Explora mapas detallados de distintas regiones</p>
+        </a>
+        <a routerLink="/fotos" class="card">
+          <div class="card-icon">📷</div>
+          <h3>Fotos</h3>
+          <p>Galería fotográfica de lugares y paisajes</p>
+        </a>
+        <a routerLink="/emblemas" class="card">
+          <div class="card-icon">🏅</div>
+          <h3>Emblemas</h3>
+          <p>Colección de emblemas e insignias</p>
+        </a>
+      </div>
+    </section>
+  
+    </main>
+
+

@@ -1,0 +1,21 @@
+<nav class="navbar">
+    <div class="navbar-brand">
+      <span class="brand-icon">🗺️</span>
+      <span class="brand-name">ProyectoMapas</span>
+    </div>
+    <ul class="navbar-links">
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Inicio</a></li>
+      <li><a routerLink="/mapas" routerLinkActive="active">Mapas</a></li>
+      <li><a routerLink="/fotos" routerLinkActive="active">Fotos</a></li>
+      <li><a routerLink="/emblemas" routerLinkActive="active">Emblemas</a></li>
+    </ul>
+    <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+  </nav>
+  
+  <div class="mobile-menu" [class.open]="menuOpen">
+    <a routerLink="/" (click)="toggleMenu()">Inicio</a>
+    <a routerLink="/mapas" (click)="toggleMenu()">Mapas</a>
+    <a routerLink="/fotos" (click)="toggleMenu()">Fotos</a>
+    <a routerLink="/emblemas" (click)="toggleMenu()">Emblemas</a>
+  </div>
+
